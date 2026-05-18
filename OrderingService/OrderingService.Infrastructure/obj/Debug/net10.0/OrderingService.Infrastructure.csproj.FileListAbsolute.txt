@@ -1,0 +1,13 @@
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.deps.json
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.dll
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.pdb
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.AssemblyInfo.cs
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.sourcelink.json
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.dll
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\refint\OrderingService.Infrastructure.dll
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.pdb
+C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\ref\OrderingService.Infrastructure.dll

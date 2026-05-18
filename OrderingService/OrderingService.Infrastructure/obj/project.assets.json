@@ -264,29 +264,6 @@
             "related": ".xml"
           }
         }
-      },
-      "OrderingService.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "OrderingService.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/OrderingService.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OrderingService.Application.dll": {}
-        }
-      },
-      "OrderingService.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/OrderingService.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OrderingService.Domain.dll": {}
-        }
       }
     }
   },
@@ -711,22 +688,11 @@
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
       ]
-    },
-    "OrderingService.Application/1.0.0": {
-      "type": "project",
-      "path": "../OrderingService.Application/OrderingService.Application.csproj",
-      "msbuildProject": "../OrderingService.Application/OrderingService.Application.csproj"
-    },
-    "OrderingService.Domain/1.0.0": {
-      "type": "project",
-      "path": "../OrderingService.Domain/OrderingService.Domain.csproj",
-      "msbuildProject": "../OrderingService.Domain/OrderingService.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1",
-      "OrderingService.Application >= 1.0.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1"
     ]
   },
   "packageFolders": {
@@ -753,11 +719,7 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\OrderingService\\OrderingService.Application\\OrderingService.Application.csproj": {
-              "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\OrderingService\\OrderingService.Application\\OrderingService.Application.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
