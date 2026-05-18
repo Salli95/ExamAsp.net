@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "g+Ewnr0AM94=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\ravil\\Desktop\\ExamAsp.net\\CatalogService\\CatalogService.Api\\CatalogService.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ravil\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\ravil\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -8,6 +8,7 @@ C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\o
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\IdentityService.Application.AssemblyInfoInputs.cache
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\IdentityService.Application.AssemblyInfo.cs
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\IdentityService.Application.csproj.CoreCompileInputs.cache
+C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\IdentityService.Application.sourcelink.json
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\Identity.52144512.Up2Date
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\IdentityService.Application.dll
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Application\obj\Debug\net10.0\refint\IdentityService.Application.dll

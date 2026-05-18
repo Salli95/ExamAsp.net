@@ -1,41 +1,49 @@
+using IdentityService.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// 1. Настройка подключения к базе данных PostgreSQL в Docker напрямую
+builder.Services.AddDbContext<IdentityDbContext>(options =>
+    options.UseNpgsql("Host=localhost;Port=5432;Database=cinema_identity_db;Username=admin;Password=superpassword"));
+
+// 2. Включаем поддержку классических контроллеров и MVC
+builder.Services.AddControllers();
+builder.Services.AddMvc();
+builder.Services.AddEndpointsApiExplorer();
+
+// 3. Явная настройка Swagger для генерации документации по контроллерам
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.OpenApiInfo
+    { 
+        Title = "IdentityService.Api", 
+        Version = "v1" 
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 4. Включаем интерфейс Swagger в режиме разработки
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "IdentityService.Api v1");
+    });
 }
 
-app.UseHttpsRedirection();
+// 5. Настраиваем маршрутизацию
+// app.UseAuthorization(); // Раскомментируй позже, когда добавим роли
+app.MapControllers(); // Это ключевая строчка, которая связывает AuthController со Swagger
 
-var summaries = new[]
+// 6. Автоматически проверяем наличие базы и таблиц при старте
+using (var scope = app.Services.CreateScope())
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var dbContext = scope.ServiceProvider.GetRequiredService<IdentityDbContext>();
+    // Теперь база уже создана, метод просто будет проверять, что всё на месте
+    dbContext.Database.EnsureCreated();
+}
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
