@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "xoTPdPJo7Ak=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ravil\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\ravil\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Время ожидания завершения скачивания \"https://api.nuget.org/v3-vulnerabilities/2026.05.15.05.29.57/vulnerability.base.json\" истекло, так как за 60000\u00A0мс не получено никаких данных.",
+      "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

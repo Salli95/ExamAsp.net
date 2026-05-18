@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Наша главная база данных для всех цехов
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: cinema-postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: superpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Брокер сообщений (почтальон, который будет переносить записки между цехами)
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: cinema-rabbitmq
+    ports:
+      - "5672:5672"   # Порт для обмена сообщениями
+      - "15672:15672" # Порт для красивой админки в браузере
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  # Быстрая память для кэша (чтобы витрина с фильмами работала мгновенно)
+  redis:
+    image: redis:7-alpine
+    container_name: cinema-redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
