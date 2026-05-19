@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {}
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
         "projectName": "IdentityService.Domain",
-        "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
-        "packagesPath": "C:\\Users\\ravil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\obj\\",
+        "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
+        "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ravil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\77479\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

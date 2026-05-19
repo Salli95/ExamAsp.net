@@ -7,4 +7,6 @@ public class Movie
     public string Genre { get; set; } = string.Empty;
     public int DurationInMinutes { get; set; }
     public string Description { get; set; } = string.Empty;
+
+    public int AvailableSeats { get; set; } = 100;
 }

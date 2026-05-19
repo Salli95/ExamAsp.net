@@ -1,29 +1,72 @@
-using MovieService.Infrastructure;
+using System.Text;
+using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using MovieService.Api.Consumers;
+using MovieService.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Подключаемся ко ВТОРОЙ базе данных в Docker
 builder.Services.AddDbContext<MovieDbContext>(options =>
     options.UseNpgsql("Host=localhost;Port=5432;Database=cinema_movie_db;Username=admin;Password=superpassword"));
 
-// Подключаем контроллеры
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration["Redis:ConnectionString"] ?? "localhost:6379";
+});
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<OrderCreatedConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMq:Host"] ?? "localhost", "/", h =>
+        {
+            h.Username(builder.Configuration["RabbitMq:Username"] ?? "guest");
+            h.Password(builder.Configuration["RabbitMq:Password"] ?? "guest");
+        });
+
+        cfg.ConfigureEndpoints(context);
+    });
+});
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var key = builder.Configuration["Jwt:Key"]
+            ?? throw new InvalidOperationException("JWT key is missing.");
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidateLifetime = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+        };
+    });
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// 2. Настройка Swagger для MovieService
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.OpenApiInfo
-    { 
-        Title = "MovieService.Api", 
-        Version = "v1" 
+    {
+        Title = "MovieService.Api",
+        Version = "v1"
     });
 });
 
 var app = builder.Build();
 
-// 3. Включаем Swagger UI
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,10 +76,11 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Обязательно маппим контроллеры перед запуском
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapControllers();
 
-// 4. Автоматически создаем базу фильма и таблицу Movies при старте в Docker
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<MovieDbContext>();

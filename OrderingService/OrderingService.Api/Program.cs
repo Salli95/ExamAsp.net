@@ -1,29 +1,62 @@
-using OrderingService.Infrastructure;
+using System.Text;
+using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using OrderingService.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Подключаемся к ТРЕТЬЕЙ базе данных в Docker
 builder.Services.AddDbContext<OrderDbContext>(options =>
     options.UseNpgsql("Host=localhost;Port=5432;Database=cinema_ordering_db;Username=admin;Password=superpassword"));
 
-// Подключаем контроллеры
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMq:Host"] ?? "localhost", "/", h =>
+        {
+            h.Username(builder.Configuration["RabbitMq:Username"] ?? "guest");
+            h.Password(builder.Configuration["RabbitMq:Password"] ?? "guest");
+        });
+    });
+});
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var key = builder.Configuration["Jwt:Key"]
+            ?? throw new InvalidOperationException("JWT key is missing.");
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidateLifetime = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+        };
+    });
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// 2. Настройка Swagger для OrderingService
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.OpenApiInfo
-    { 
-        Title = "OrderingService.Api", 
-        Version = "v1" 
+    {
+        Title = "OrderingService.Api",
+        Version = "v1"
     });
 });
 
 var app = builder.Build();
 
-// 3. Включаем Swagger UI в режиме разработки
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,10 +66,11 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Обязательно маппим контроллеры перед запуском
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapControllers();
 
-// 4. Автоматически создаем базу заказов и таблицу Orders при старте в Docker
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<OrderDbContext>();

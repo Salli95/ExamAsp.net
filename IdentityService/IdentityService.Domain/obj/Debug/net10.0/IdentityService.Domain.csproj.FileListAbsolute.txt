@@ -10,3 +10,15 @@ C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Domain\obj\De
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\refint\IdentityService.Domain.dll
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.pdb
 C:\Users\ravil\Desktop\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\ref\IdentityService.Domain.dll
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\bin\Debug\net10.0\IdentityService.Domain.deps.json
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\bin\Debug\net10.0\IdentityService.Domain.dll
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\bin\Debug\net10.0\IdentityService.Domain.pdb
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.AssemblyInfoInputs.cache
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.AssemblyInfo.cs
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.sourcelink.json
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.dll
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\refint\IdentityService.Domain.dll
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\IdentityService.Domain.pdb
+C:\Users\77479\ExamAsp.net\IdentityService\IdentityService.Domain\obj\Debug\net10.0\ref\IdentityService.Domain.dll

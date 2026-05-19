@@ -11,3 +11,16 @@ C:\Users\ravil\Desktop\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\
 C:\Users\ravil\Desktop\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\refint\MovieService.Infrastructure.dll
 C:\Users\ravil\Desktop\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.pdb
 C:\Users\ravil\Desktop\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\ref\MovieService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\bin\Debug\net10.0\MovieService.Infrastructure.deps.json
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\bin\Debug\net10.0\MovieService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\bin\Debug\net10.0\MovieService.Infrastructure.pdb
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.AssemblyInfo.cs
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.sourcelink.json
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\refint\MovieService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\MovieService.Infrastructure.pdb
+C:\Users\77479\ExamAsp.net\MovieService\MovieService.Infrastructure\obj\Debug\net10.0\ref\MovieService.Infrastructure.dll

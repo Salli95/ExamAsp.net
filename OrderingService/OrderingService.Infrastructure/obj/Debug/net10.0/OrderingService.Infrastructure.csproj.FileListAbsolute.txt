@@ -11,3 +11,16 @@ C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructur
 C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\refint\OrderingService.Infrastructure.dll
 C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.pdb
 C:\Users\ravil\Desktop\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\ref\OrderingService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.deps.json
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\bin\Debug\net10.0\OrderingService.Infrastructure.pdb
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.AssemblyInfo.cs
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.sourcelink.json
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\refint\OrderingService.Infrastructure.dll
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\OrderingService.Infrastructure.pdb
+C:\Users\77479\ExamAsp.net\OrderingService\OrderingService.Infrastructure\obj\Debug\net10.0\ref\OrderingService.Infrastructure.dll

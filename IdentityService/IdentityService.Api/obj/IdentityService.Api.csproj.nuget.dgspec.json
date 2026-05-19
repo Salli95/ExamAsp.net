@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj": {}
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj": {
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
+        "projectUniqueName": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
         "projectName": "IdentityService.Api",
-        "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
-        "packagesPath": "C:\\Users\\ravil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Api\\obj\\",
+        "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Api\\IdentityService.Api.csproj",
+        "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ravil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\77479\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -26,8 +26,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj"
+              "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj"
               }
             }
           }
@@ -42,12 +42,16 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.8, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.3, )"
@@ -90,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -508,17 +512,17 @@
         }
       }
     },
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj": {
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj",
         "projectName": "IdentityService.Application",
-        "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj",
-        "packagesPath": "C:\\Users\\ravil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\obj\\",
+        "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj",
+        "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ravil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\77479\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -530,8 +534,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
-                "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj"
+              "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
+                "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj"
               }
             }
           }
@@ -546,7 +550,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -567,7 +571,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -845,17 +849,17 @@
         }
       }
     },
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
         "projectName": "IdentityService.Domain",
-        "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
-        "packagesPath": "C:\\Users\\ravil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\obj\\",
+        "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\IdentityService.Domain.csproj",
+        "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ravil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\77479\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -879,7 +883,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -900,7 +904,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1178,17 +1182,17 @@
         }
       }
     },
-    "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj": {
+    "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj",
         "projectName": "IdentityService.Infrastructure",
-        "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ravil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\IdentityService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ravil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\77479\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -1200,8 +1204,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj": {
-                "projectPath": "C:\\Users\\ravil\\Desktop\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj"
+              "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj": {
+                "projectPath": "C:\\Users\\77479\\ExamAsp.net\\IdentityService\\IdentityService.Application\\IdentityService.Application.csproj"
               }
             }
           }
@@ -1216,7 +1220,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -1243,7 +1247,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
